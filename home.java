@@ -11,8 +11,9 @@ public class home {
         String A="HOLA";
         int b=4;
         int f=2;
-        //Nklfkjdfjbnvhjjhb
-        int j;
+        
+        int c=3;
+        String be="Asas";
         JOptionPane.showMessageDialog(null, "hola"+a+A);
     }
 }
