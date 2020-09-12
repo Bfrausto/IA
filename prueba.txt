@@ -1,0 +1,3 @@
+a,no estudie hoy,V
+b,me llamo juan,F
+c,es el auto azul,F

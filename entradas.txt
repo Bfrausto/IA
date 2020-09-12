@@ -1,4 +1,5 @@
 p,yo corro,F
 q,no llovio hoy,V
 r,no me quiere,V
-s,mi camisa es blanca, 
+s,mi camisa es blanca,F
+si no yo corro y no no me quiere o mi camisa es blanca entonces no no llovio hoy es igual a yo corro o no me quiere entonces mi camisa es blanca y no no llovio hoy
