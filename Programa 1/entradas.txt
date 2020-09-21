@@ -1,4 +1,4 @@
-p,yo corro,F
+P,yo CorrO,F 
 q,no llovio hoy,V
 r,no me quiere,V
 s,mi camisa es blanca,F
