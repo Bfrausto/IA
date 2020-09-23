@@ -1,0 +1,4 @@
+frio,-4,7
+tibio,8,13
+caliente,11,17
+superhot,15,22

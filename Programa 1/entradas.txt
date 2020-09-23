@@ -1,4 +1,3 @@
-P,yo CorrO,F 
-q,no llovio hoy,V
-r,no me quiere,V
-s,mi camisa es blanca,F
+P,no estudie hoy,V 
+q,esta lloviendo,F
+r,tengo hambre,V

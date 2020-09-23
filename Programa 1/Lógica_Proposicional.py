@@ -226,7 +226,11 @@ def evaluabig(cadena, var1, var2):
 
 rango = leer()
 if 2 <= rango <= 4:
-    cadena = input("Ingrese una sentencia compleja\n")
-    mostrar(cadena, rango)
+    while True:
+        cadena = input("Ingrese una sentencia compleja\n")
+        mostrar(cadena, rango)
+        checar = input("Desea ingresar otra sentencia compleja (s/S para si, n/N para no):  ")
+        if checar.upper() == 'N':
+            break
 else:
     print("Recuerde ingresar el número de sentencias permitidas (min 2, max 4)")
