@@ -1,10 +1,10 @@
 Valor	Grado	Rango	Descripcion
-12.0  	0.4  	8-13 	tibio
+12.0  	0.333  	11-17 	caliente
 5.0  	0.364  	-4-7 	frio
 22.0  	1.0  	15-22 	superhot
 15.0  	0.667  	11-17 	caliente
-10.0  	0.8  	8-13 	tibio
-8.0  	0  	0-0 	 
-6.5  	0.091  	-4-7 	frio
+10.0  	0.857  	6-13 	tibio
+8.0  	0.571  	6-13 	tibio
+6.5  	0.143  	6-13 	tibio
 -3.0  	1.0  	-4-7 	frio
 100.0  	0  	15-22 	superhot
