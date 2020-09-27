@@ -11,7 +11,7 @@ medias = []
 # Método para leer entradas del archivo txt
 
 def leer():
-    archivo = open("entradas.txt", "r")
+    archivo = open("rangos.txt", "r")
     entrada = archivo.readlines()
     archivo2 = open("valores.txt", "r")
     entrada2 = archivo2.read()
