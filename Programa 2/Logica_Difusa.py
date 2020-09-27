@@ -1,11 +1,14 @@
+# Created by María Fernanda Lua Morales and Brian Daniel Frausto Cortés on 09/27/2020
+# Este programa está diseñado para solucionar oraciones complejas de lógica proposicional.  
+
 variable = []
 rangoinf = []
 rangosup = []
 valores = []
 medias = []
+
 #################################################################################################
 # Método para leer entradas del archivo txt
-
 
 def leer():
     archivo = open("entradas.txt", "r")
@@ -39,7 +42,6 @@ def leer():
 #################################################################################################
 # Se verifica el traslape
 
-
 def verTraslape():
     auxInfAct = 0
     auxSupant = 0
@@ -58,16 +60,14 @@ def verTraslape():
 #################################################################################################
 # se obtienen las medias de los rangos
 
-
 def obtenerMedia():
     for a, b in zip(rangoinf, rangosup):
         medias.append((a+b)/2)
-   # for a in medias:
-   #    print (a)
+    # for a in medias:
+    #    print (a)
 
 #################################################################################################
 # se crea el archivo de salidas y se definen los valores de variables
-
 
 def funcionMembresia(rango):
     salidas = open("salida.txt", "w")
@@ -81,15 +81,15 @@ def funcionMembresia(rango):
         auxVariable = " "
         for a, d, b, var in zip(rangoinf, rangosup, medias, variable):
             if cont == 0:
-                c = b
+                c = rangoinf[1]
                 b = a
                 if x < a:
                     auxRangoInf = a  # valores menores al rango menor
                     auxRangoSup = d
                     auxVariable = var
-
             elif cont == rango-1:
-                c = d
+                b = rangosup[rango-2]
+                c = b
                 if x > d:
                     auxRangoInf = a  # valores mayores al rango mayor
                     auxRangoSup = d
@@ -107,25 +107,31 @@ def funcionMembresia(rango):
                       str(auxRangoInf)+'-'+str(auxRangoSup)+' \t'+auxVariable+'\n')
     salidas.close()
 
-
 #################################################################################################
 # evaluar el valor en la funcion de membresia
 
 def evaluaX(a, b, c, d, x):
-    if x <= a:
+    #print("a=",a," b=",b," c=",c," d=",d," x=",x)
+    if x <= rangoinf[0]:
+        return 1
+    elif x <= a:
         return 0
     elif a <= x and x <= b:
         return ((x-a)/(b-a))
     elif b <= x and x <= c:
         return 1
-    elif c <= x and x <= d:
-        return ((d-x)/(d-c))
-    else:
+    elif c <= x and x < d:
+        if d != rangosup[rango-1]:
+            return ((d-x)/(d-c))
+        else:
+            return 1
+    elif x < rangosup[rango-1] or d != rangosup[rango-1]:
         return 0
+    else:
+        return 1
 
 #################################################################################################
 # Clase Main
-
 
 rango = leer()
 cadena = 0
