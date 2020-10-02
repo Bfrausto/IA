@@ -1,4 +1,4 @@
-frio,-4,7
-tibio,6,13
-caliente,11,17
-superhot,15,22
+SMALL,-10,15
+MEDIUM,10,45
+LARGE,40,65
+EXTRA LARGE,57,75

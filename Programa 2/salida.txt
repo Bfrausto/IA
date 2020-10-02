@@ -1,10 +1,11 @@
 Valor	Grado	Rango	Descripcion
-12.0  	0.333  	11-17 	caliente
-5.0  	1.0  	-4-7 	frio
-22.0  	1.0  	15-22 	superhot
-15.0  	0.667  	11-17 	caliente
-10.0  	0.857  	6-13 	tibio
-8.0  	0.571  	6-13 	tibio
-6.5  	0.5  	-4-7 	frio
--3.0  	1.0  	-4-7 	frio
-100.0  	1.0  	15-22 	superhot
+12.0  	0.6  	-10-15 	SMALL
+24.0  	0.8  	10-45 	MEDIUM
+59.0  	0.48  	40-65 	LARGE
+78.0  	1.0  	57-75 	EXTRA LARGE
+17.0  	0.4  	10-45 	MEDIUM
+42.0  	0.171  	10-45 	MEDIUM
+66.0  	1.0  	57-75 	EXTRA LARGE
+43.0  	0.24  	40-65 	LARGE
+-7.0  	1.0  	-10-15 	SMALL
+15.0  	0.286  	10-45 	MEDIUM
