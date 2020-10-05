@@ -1,3 +1,6 @@
+# Created by María Fernanda Lua Morales and Brian Daniel Frausto Cortés on 10/05/2020
+#Este programa simula el comportamiento de Autómatas Celulares de Dimensión 1 
+
 import random
 vReglas = []
 regla = 0
