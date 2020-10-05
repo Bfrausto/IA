@@ -222,7 +222,7 @@ def evaluabig(cadena, var1, var2):
     return caracter, subcadena
 
 #################################################################################################
-# Clase Main
+#  Main
 
 rango = leer()
 if 2 <= rango <= 4:
