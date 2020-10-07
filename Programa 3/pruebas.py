@@ -50,6 +50,7 @@ def deterministica(borde, valores, generaciones):
     vReglas.append(input("Ingresa el valor correspondiente a (1,1): "))
     auxValores = []
     auxG = []
+    print(borde)
     for x in range(generaciones):
         #print(' '.join(map(str, valores)))
         for a in valores:
@@ -62,13 +63,13 @@ def deterministica(borde, valores, generaciones):
         for i in range(len(valores)):
             c = valores[i]
             if i == len(valores)-1:
-                valores[0] if borde == 1 else c
+                v = valores[0] if borde == 1 else c
                 if borde == 0:
-                    auxValores.insert(i, '0')
+                    auxValores.insert(i,0)
                     continue
             else:
                 v = valores[i+1]
-            # print(c,v)
+            #print(c,v)
             if c == 0 and v == 0:
                 auxValores.insert(i, int(vReglas[0]))
             elif c == 0 and v == 1:
@@ -119,13 +120,13 @@ def wolfram(borde, valores, generaciones):
                     valores)-1] if borde == 1 else c
                 vd = valores[i+1]
                 if borde == 0:
-                    auxValores.insert(i, '0')
+                    auxValores.insert(i, 0)
                     continue
             elif i == len(valores)-1:
                 vd = 0 if borde == 0 else valores[0] if borde == 1 else c
                 vi = valores[i-1]
                 if borde == 0:
-                    auxValores.insert(i, '0')
+                    auxValores.insert(i, 0)
                     continue
             else:
                 vi = valores[i-1]
