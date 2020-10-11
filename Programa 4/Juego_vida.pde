@@ -131,7 +131,7 @@ def gene():
     global gen
     fill(51, 51, 153)
     noStroke()
-    rect(920, 280, 32, 32)
+    rect(920, 280, 100, 32)
     fill(255)
     textSize(15)
     text(gen,920,300)
