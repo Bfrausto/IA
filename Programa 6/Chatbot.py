@@ -8,7 +8,7 @@ pares = [
 
     [
         r"mi nombre es (.*)",
-        ["Hola %1, como estas ?",]
+        ["Hola , como estas ?",]
     ],
      [
         r"cual es tu nombre ?",
@@ -25,6 +25,14 @@ pares = [
     [
         r"hola|hey|buenas",
         ["Hola", "Que tal",]
+    ],
+        [
+        r"(.*)puedes hacer ?",
+        ["no mucho, soy un principiante","estoy aprendiendo a conversar con personas"]
+    ],
+        [
+        r"(.*) gusta hacer ?",
+        ["conocer personas y saber de ellas","me gusta hablar contigo",]
     ],
     [
         r"que (.*) quieres ?",
