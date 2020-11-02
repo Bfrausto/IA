@@ -8,7 +8,7 @@ pares = [
 
     [
         r"mi nombre es (.*)",
-        ["Hola , como estas ?",]
+        ["Hola %1 , como estas ?",]
     ],
      [
         r"cual es tu nombre ?",
@@ -69,7 +69,7 @@ pares = [
 def chatear():
     mis_reflexions = {
 }
-    print("Hola soy un bot") #mensaje por defecto
+    #print("Hola soy un bot") #mensaje por defecto
     chat = Chat(pares, mis_reflexions)
     chat.converse()
 chatear()
