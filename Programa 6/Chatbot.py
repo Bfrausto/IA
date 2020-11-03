@@ -1,34 +1,38 @@
 from nltk.chat.util import Chat, reflections
 pares = [
 
-        [
+    [
         r"(.*) programacion",
-        ["programacion ? o_O",]
+        ["he leido sobre el tema ","Me parece algo interesante"]
     ],
 
     [
         r"mi nombre es (.*)",
-        ["Hola %1 , como estas ?",]
+        ["Hola , como estas ?",]
     ],
-     [
+    [
         r"cual es tu nombre ?",
-        ["Mi nombre es Chatbot ?",]
+        ["Mi nombre es Chatbot ",]
+    ],
+    [
+        r"(.*) llamas ?",
+        ["Mi nombre es Chatbot ",]
     ],
     [
         r"como estas ?",
         ["Bien, y tu?","He estado mejor, y tu?"]
     ],
     [
-        r"disculpa (.*)",
+        r"disculpa",
         ["No pasa nada",]
     ],
     [
-        r"hola|hey|buenas",
-        ["Hola", "Que tal",]
+        r"hola ?|hey|buenas|que tal",
+        ["Hola", "Que tal","Hola, mucho gusto"]
     ],
         [
-        r"(.*)puedes hacer ?",
-        ["no mucho, soy un principiante","estoy aprendiendo a conversar con personas"]
+        r"(.*)sabes hacer ?",
+        ["no mucho, soy muy principiante","estoy aprendiendo a conversar con personas"]
     ],
         [
         r"(.*) gusta hacer ?",
@@ -36,7 +40,7 @@ pares = [
     ],
     [
         r"que (.*) quieres ?",
-        ["Nada gracias",]
+        ["Nada, gracias",]
 
     ],
     [
@@ -45,18 +49,28 @@ pares = [
     ],
 
     [
-        r"me voy|finalizar|bye|chao",
+        r"me voy|finalizar|bye|chao|adios|nos vemos",
         ["Chao","Fue bueno hablar contigo",]
         
     ],
         [
         r"que edad tienes|cuantos años tienes",
-        ["La edad es relativa","Mmmm creo que aun no cumplo un año"]
+        ["La edad es relativa","creo que aun no cumplo ni un año", "no me gusta decir mi edad"]
         
     ],
         [
         r"me caes bien",
-        ["Wow, gracias","igual tu a mi"]
+        ["Tu tambien eres genial","igual tu a mi"]
+        
+    ],
+        [
+        r"(.*) bien gracias",
+        ["Me alegro mucho","es bueno saber eso"]
+        
+    ],
+           [
+        r"(.*) ser mi amiga ?",
+        ["Eso seria fantastico","me agrada mucho esa idea","Claro, serás mi primer amigo"]
         
     ],
     [
