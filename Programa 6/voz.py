@@ -1,6 +1,4 @@
 
-import speech_recognition as sr
-
 
 print("Conectado")
 recognizer = sr.Recognizer()

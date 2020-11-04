@@ -2,7 +2,7 @@ from nltk.chat.util import Chat, reflections
 pares = [
 
     [
-        r"(.*) programacion",
+        r"(.*) programación",
         ["he leido sobre el tema ","Me parece algo interesante"]
     ],
 
@@ -11,15 +11,15 @@ pares = [
         ["Hola , como estas ?",]
     ],
     [
-        r"cual es tu nombre ?",
+        r"cuál es tu nombre ?",
         ["Mi nombre es Chatbot ",]
     ],
     [
-        r"(.*) llamas ?",
+        r"cómo te llamas ?",
         ["Mi nombre es Chatbot ",]
     ],
     [
-        r"como estas ?",
+        r"cómo estás ?",
         ["Bien, y tu?","He estado mejor, y tu?"]
     ],
     [
@@ -34,12 +34,12 @@ pares = [
         r"(.*)sabes hacer ?",
         ["no mucho, soy muy principiante","estoy aprendiendo a conversar con personas"]
     ],
-        [
+        [ 
         r"(.*) gusta hacer ?",
         ["conocer personas y saber de ellas","me gusta hablar contigo",]
     ],
     [
-        r"que (.*) quieres ?",
+        r"qué (.*) quieres ?",
         ["Nada, gracias",]
 
     ],
@@ -49,12 +49,12 @@ pares = [
     ],
 
     [
-        r"me voy|finalizar|bye|chao|adios|nos vemos",
+        r"me voy|finalizar|bye|chao|nos vemos",
         ["Chao","Fue bueno hablar contigo",]
         
     ],
         [
-        r"que edad tienes|cuantos años tienes",
+        r"qué edad tienes|cuántos años tienes",
         ["La edad es relativa","creo que aun no cumplo ni un año", "no me gusta decir mi edad"]
         
     ],
@@ -74,7 +74,7 @@ pares = [
         
     ],
     [
-        r"quit ?",
+        r"adiós ?",
         ["Nos vemos","Hasta luego",]
     ],
 
